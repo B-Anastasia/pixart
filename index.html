@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113199553-1">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113199553-1');
+    </script>
+    
+  </head>
+  <body>
+    <div class="container-fluid" id="wrapper">
+      <div class="row header">
+        <div class="icon-menu fixed-top" id="menu-toggle">
+          <span class="divide"></span>
+          <span class="divide"></span>
+          <span class="divide"></span>
+        </div>
+        <div class="col text-center">
+          <h1>Lab: Pixel Art Maker</h1>
+        </div>
+      </div>
+      <!-- header -->
+      
+      <div class="row mainBody justify-content-center">
+        <div  class="col-lg-2 col-10 col-sm-8 text-center usersForm" id="sidebar-wrapper">
+          <div class="form-group" id="title">
+            <label for="userTitle">Create your title</label>
+            <input type="text"  class="form-control btn-sm" id="userTitle">
+            <input type="submit" class="form-control btn-sm" id='saveTitle' value="Create">
+          </div>
+          <div class="form-group" id="sizePicker">
+            <h3>Choose Grid Size</h3>
+            <div class="row">
+              <div class="col">
+                <label for="input_height">Grid Height:</label>
+                <input type="number" class="form-control btn-sm" id="input_height" name="height" value="1" onkeyup="isright(this);">
+              </div>
+              <div class="col">
+                <label for="input_width">Grid Width:</label>
+                <input type="number" class="form-control btn-sm" id="input_width" name="width" value="1" onkeyup="isright(this);">
+              </div>
+            </div>
+            <input type="submit" id="createGrid" class="form-control btn-sm" value="Create">
+          </div>
+          <div class="form-group">
+            <label for="colorPicker">Pick A Color</label>
+            <input type="color" class="form-control btn-sm" id="colorPicker">
+          </div>
+          <div class="form-group">
+            <div class="row" id="moreProperties">
+              <div class="col col-sm-6 col-lg-12 col-xl-12">
+                <input type="button"  class="form-control btn-sm  " id="colorBorder" value="Set the border color">
+                <input type="button" class="form-control btn-sm " id="colorCells" value="Set one color to all cells">
+              </div>
+              <div class="col col-sm-6 col-lg-12 col-xl-12">
+                <input type="button" class="form-control btn-sm " id="clearCells" value="Clear all cells">
+                <input type="button" class="form-control btn-sm " id="colorTitle" value="Change the color of title">
+              </div>
+          </div>
+        </div>
+        </div>
+        <!-- sidebar -->
+        
+        <div class="col-lg-10 col-12 table" id="page-content-wrapper">
+          <div class="container-fluid">
+            <div class="row ">
+              <div class="col text-center pt-3">
+                <p>Here can be your table! You only need to choose the grid size!</p>
+                  <table id="pixel_canvas"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- table -->
+
+      </div>
+    </div>
+    <!-- main content -->
+    
+    <footer> 
+      <div class="container-fluid">
+        <div class="row" id="footer">
+          <div class="col text-lg-right text-sm-right ">
+            <input type="button" id='shareToFriends' class="btn btn-primary btn-sm align-baseline " name="shareToFriends" value="Share with the friends">
+          </div>
+          <div class="col">
+            <input type="reset" id='resetProject' class="btn btn-sm align-baseline" name="resetProject" value="Clear this project">
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <!-- bottom -->
+    
+    <!-- jQuery, Tether, Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="designs.js"></script>
+  </body>
+</html>
