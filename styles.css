@@ -125,7 +125,7 @@ footer {
 	left: 0;
 }
 #resetProject{
-	width: 162px;
+	width: 162.016px;
 }
 
 /*Changes to display it on different screens*/
@@ -159,13 +159,6 @@ td:hover{
 	margin-top: 4px;
 	height: 35px;
 }
-/*.icon-menu{
-	width: 28px;
-}
-.divide{
-	height: 2px;
-	margin: 2px 0;
-}*/
 #sidebar-wrapper .form-group{
 	margin-bottom: 2px;
 }
@@ -176,19 +169,15 @@ td:hover{
 }
 
 @media (min-width: 320px) and (max-width: 479.98px) { 
+#headerName{
+	padding-left: 40px;
+}
 .header h1{
 	font-size: 28px;
 }
 .header{
 	margin-bottom: 8px;
 }
-/*.icon-menu{
-	width: 28px;
-}
-.divide{
-	height: 2px;
-	margin: 2px 0;
-}*/
 #sizePicker h3{
 	font-size: 20px;
 }
@@ -213,6 +202,9 @@ table{
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 480px) and (max-width: 575.98px) { 
+#headerName{
+	padding-left: 40px;
+}
 .header h1{
 	font-size: 35px;
 }
@@ -235,15 +227,8 @@ table{
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
+}
 
-/*.icon-menu{
-	width: 28px;
-}
-.divide{
-	height: 2px;
-	margin: 2px 0;
-}*/
-}
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
 .header h1{
@@ -286,13 +271,6 @@ table{
 #sizePicker h3{
 	font-size: 20px;
 }
-/*.icon-menu{
-	width: 28px;
-}
-.divide{
-	height: 2px;
-	margin: 2px 0;
-}*/
 #footer input{
 	margin-top: 4px;
 	margin-bottom: 4px;
@@ -302,7 +280,7 @@ table{
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 .header h1{
-	font-size: 45px;
+	font-size: 50px;
 }
 #moreProperties input{
 	font-size: 12px;
@@ -313,9 +291,11 @@ table{
 }
 }
 @media (max-width: 1199.98px) {
+	#headerName{
+	padding-left: 40px;
+}
 .icon-menu{
 	display: block;
-	/*width: 30px;*/
 }
 .usersForm input,#footer input {
 	height: 35px;
