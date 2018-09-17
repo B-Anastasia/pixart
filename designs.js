@@ -71,6 +71,16 @@ var mq2=window.matchMedia("(max-width: 479.98px)");
 var mq3=window.matchMedia("(max-width: 575.98px)");
 var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
+var iOS = ['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform) >= 0;
+
+if (iOS) {
+	function isright(obj){
+	if (obj.value>8) {
+		obj.value=8;
+	} else if (obj.value<1) {
+		obj.value='';
+	}
+}
 
 if (mq1.matches) {
 	function isright(obj){
@@ -205,7 +215,7 @@ buttonRestart.click(function () {
 
 //TODO: share with the friends
 buttonShare.click( function openWin2() {
-    open("http://www.facebook.com/sharer.php?u=http://pixmaker.ga/","displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
+    open("http://www.facebook.com/sharer.php?u=http://b-anastasia.github.io/","displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
 });
 
 //TODO: to change the border color
