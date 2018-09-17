@@ -71,26 +71,6 @@ var mq2=window.matchMedia("(max-width: 479.98px)");
 var mq3=window.matchMedia("(max-width: 575.98px)");
 var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
-var iOS = ['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform) >= 0;
-
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	function isright(obj){
-	if (obj.value>120) {
-		obj.value=120;
-	} else if (obj.value<1) {
-		obj.value='';
-	}
-}
-}
-
-if (iOS) {
-	function isright(obj){
-	if (obj.value>8) {
-		obj.value=8;
-	} else if (obj.value<1) {
-		obj.value='';
-	}
-}
 
 if (mq1.matches) {
 	function isright(obj){
@@ -141,6 +121,20 @@ function isright(obj){
 		obj.value='';
 	}
 }
+
+//TODO: for Iphone
+var w=window.inputWidth;
+
+if(w<=479.98){
+	function isright(obj){
+	if (obj.value>10) {
+		obj.value=10;
+	} else if (obj.value<1) {
+		obj.value='';
+	}
+}
+
+
 
 //TODO: To get new value height of grid that user inserts
 inputHeight.change(function () {
