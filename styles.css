@@ -30,16 +30,16 @@ html, body {
 /*Icon menu*/
 .icon-menu{
 	display: none;
-	height: 30px;
-	width: 20px;
+	height: 40px;
+	width: 40px;
 	padding: 10px  0 0 10px ;
 	float: left;
 	cursor: pointer;
 }
 .divide{
 	display: block;
-	height: 2px;
-	margin: 3px 0;
+	height: 3px;
+	margin: 4px 0;
 	background: #f1f1f1;
 }
 
@@ -124,13 +124,15 @@ footer {
 	right: 0;
 	left: 0;
 }
-
 #resetProject{
-	width: 150.422px;
+	width: 162px;
 }
 
 /*Changes to display it on different screens*/
 @media (min-width: 0px) and (max-width: 319.98px) {
+#headerName{
+	padding-left: 40px;
+}
 .header h1{
 	font-size: 25px;
 }
@@ -140,6 +142,10 @@ footer {
 #resetProject{
 	margin-bottom: 4px;
 }
+.usersForm input {
+	height: 35px;
+}
+
 table{
 	margin-bottom: 30px;
 }
@@ -151,14 +157,15 @@ td:hover{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 4px;
+	height: 35px;
 }
-.icon-menu{
+/*.icon-menu{
 	width: 28px;
 }
 .divide{
 	height: 2px;
 	margin: 2px 0;
-}
+}*/
 #sidebar-wrapper .form-group{
 	margin-bottom: 2px;
 }
@@ -175,13 +182,13 @@ td:hover{
 .header{
 	margin-bottom: 8px;
 }
-.icon-menu{
+/*.icon-menu{
 	width: 28px;
 }
 .divide{
 	height: 2px;
 	margin: 2px 0;
-}
+}*/
 #sizePicker h3{
 	font-size: 20px;
 }
@@ -228,13 +235,14 @@ table{
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-.icon-menu{
+
+/*.icon-menu{
 	width: 28px;
 }
 .divide{
 	height: 2px;
 	margin: 2px 0;
-}
+}*/
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -278,13 +286,13 @@ table{
 #sizePicker h3{
 	font-size: 20px;
 }
-.icon-menu{
+/*.icon-menu{
 	width: 28px;
 }
 .divide{
 	height: 2px;
 	margin: 2px 0;
-}
+}*/
 #footer input{
 	margin-top: 4px;
 	margin-bottom: 4px;
@@ -307,7 +315,11 @@ table{
 @media (max-width: 1199.98px) {
 .icon-menu{
 	display: block;
-	width: 30px;
+	/*width: 30px;*/
+}
+.usersForm input,#footer input {
+	height: 35px;
+	font-size: 15px;
 }
 }
 /* Extra large devices (large desktops, 1200px and up)*/
