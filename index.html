@@ -45,11 +45,11 @@
             <div class="row">
               <div class="col">
                 <label for="input_height">Grid Height:</label>
-                <input type="number" class="form-control btn-sm" id="input_height" name="height" value="1" onkeyup="isright(this);">
+                <input type="number" class="form-control btn-sm" pattern="[0-9]*" id="input_height" name="height" value="1" onkeyup="isright(this);">
               </div>
               <div class="col">
                 <label for="input_width">Grid Width:</label>
-                <input type="number" class="form-control btn-sm" id="input_width" name="width" value="1" onkeyup="isright(this);">
+                <input type="number" class="form-control btn-sm" pattern="[0-9]*" id="input_width" name="width" value="1" onkeyup="isright(this);">
               </div>
             </div>
             <input type="submit" id="createGrid" class="form-control btn-sm" value="Create">
