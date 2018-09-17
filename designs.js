@@ -73,6 +73,16 @@ var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
 var iOS = ['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform) >= 0;
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	function isright(obj){
+	if (obj.value>120) {
+		obj.value=120;
+	} else if (obj.value<1) {
+		obj.value='';
+	}
+}
+}
+
 if (iOS) {
 	function isright(obj){
 	if (obj.value>8) {
