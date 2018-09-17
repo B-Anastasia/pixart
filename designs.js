@@ -122,19 +122,6 @@ function isright(obj){
 	}
 }
 
-//TODO: for Iphone
-var w=window.inputWidth;
-
-if(w<=479.98){
-	function isright(obj){
-	if (obj.value>10) {
-		obj.value=10;
-	} else if (obj.value<1) {
-		obj.value='';
-	}
-}
-
-
 
 //TODO: To get new value height of grid that user inserts
 inputHeight.change(function () {
