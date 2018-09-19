@@ -59,6 +59,9 @@ html, body {
 #sizePicker h3{
 	margin-bottom: 2px;
 }
+#colorPicker{
+	color: #6c757d !important;
+}
 
 /*Content*/
 /*Table*/
