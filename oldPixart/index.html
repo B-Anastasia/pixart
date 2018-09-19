@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+     <link rel="stylesheet" href="styles.css">
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113199553-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113199553-1');
+</script>
+</head>
+<body>
+<div class="main">
+    <div class="header"><h1>Lab: Pixel Art Maker</h1></div>
+    <div class='usersForm'>
+    <label for="userTitle">Create your title <input type="text" id='userTitle' name="titleProject" value=""></label>
+    <input type="submit" id='saveTitle' name="saveNewTitle" value="Create">
+    <form id="sizePicker">
+        <h2>Choose Grid Size</h2>
+        <label for="input_height">Grid Height:</label><label for="input_width">Grid Width:</label>
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="submit" value="Create">
+    </form>
+    <label for="colorPicker">Pick A Color<input type="color" id="colorPicker"></label>
+    <ul id="moreProperties"> More properties:
+        <li><input type="button" id="colorBorder" name="colorBorder" value="Set the border color"></li>
+        <li><input type="button" id="colorCells" name="colorCells" value="Set one color to all cells"></li>
+        <li><input type="button" id="clearCells" name="clearCells" value="Clear all cells"></li>
+        <li><input type="button" id="colorTitle" name="colorTitle" value="Change the color of title"></li>
+    </ul>
+</div>
+<div class="table">
+    <table id="pixel_canvas"></table>
+</div>
+<div class='foot'>
+    <!--<input type="button" id='saveProject' name="saveProject" value="Save this project">-->
+    <input type="reset" id='resetProject' name="resetProject" value="Clear this project">
+    <input type="button" id='shareToFriends' name="shareToFriends" value="Share with the friends">
+</div>
+</div>
+<script src="designs.js"></script>
+</body>
+</html>

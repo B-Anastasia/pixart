@@ -1,0 +1,75 @@
+
+// When size is submitted by the user, call makeGrid()
+var table=document.getElementById('pixel_canvas');  // #table
+
+var bodyTable=document.createElement('TBODY');
+table.appendChild(bodyTable);
+
+
+
+var buttonSend=$('form input[type="submit"]');
+
+var inputHeight=$('#input_height');
+var inputWidth=$('#input_width');
+valueHeight=inputHeight.val();
+valueWidth=inputWidth.val();
+inputHeight.change(function () {
+    valueHeight=inputHeight.val();
+});
+
+inputWidth.change(function () {
+    valueWidth=inputWidth.val();
+});
+buttonSend.on('click', function () {
+    makeGrid(valueHeight,valueWidth);
+  return false;
+});
+
+function makeGrid(rows,col){
+  $('tbody').empty();
+    for(var i=0;i<rows;i++){
+    var row=document.createElement('TR');
+    bodyTable.append(row);
+
+
+    for(var j=0;j<col;j++){
+      var cells=document.createElement('TD');
+      row.append(cells);
+         
+    }
+  }
+    	
+		
+} 
+
+function myFunc (e)                               // в одних браузерах при клике сгенерируетс€ объект event и передастс€ функции как аргумент e, в других - не передастс€
+{
+var evt = window.event || e,                      // где event не передалс€, пользуем window.event
+    obj = evt.srcElement || evt.target;           // получаем тег, по которому кликнули - синтаксис дл€ двух групп браузеров
+if (obj.tagName == 'TABLE') return;               // кликнули по бордеру или по меж€чеечному пространству, т.е. не точно по €чейке 
+while (obj.tagName != 'TD') obj = obj.parentNode;
+ // в €чейке могут быть внутренние теги (см. b22) - вверх по иерархии доходим от них до тега TD
+obj.className = obj.className ? '' : 4).value;       // если фон был белым, станет чЄрным, и - наоборот
+}
+ 
+// только ѕќ—Ћ≈ окончани€ загрузки браузер будет знать о существовании тега с id="myTBL"
+// и только “ќ√ƒј мы можем дать браузеру команду назначить функцию обработки событи€ клика по этому тегу
+onload = function ()
+{
+var trg = document.getElementById ('pixel_canvas');
+if (document.addEventListener) trg.addEventListener ('click', myFunc); // синтаксис назначени€ функции дл€ одних браузеров
+else if (document.attachEvent) trg.attachEvent ('onclick', myFunc);    // дл€ других
+else trg.onclick = myFunc;                                             // дл€ третьих
+}
+
+// todo: to change text from tag <h1> to title from user
+$('#saveTitle').on('click',function(){
+  var newTitle=$('#userTitle').val();
+    var title=$('h1');
+    var newTitle=title.text(newTitle);
+});
+
+$("*").click(function(event) {
+        alert(this.tagName + " === " + event.target.nodeName + " \/\/ " + (this === event.target));
+      });
+
