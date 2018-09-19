@@ -124,7 +124,7 @@ buttonRestart.click(function () {
 
 //TODO: share with the friends
 buttonShare.click( function openWin2() {
-    open("http://www.facebook.com/sharer.php?u=http://pixmaker.ga/","displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
+    open("http://www.facebook.com/sharer.php?u=https://b-anastasia.github.io/oldPixart/","displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
 });
 
 //TODO: to change the border color
