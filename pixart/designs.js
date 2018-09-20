@@ -38,7 +38,7 @@ valueWidth=inputWidth.val();
 buttonGrid=$('#createGrid');
 descriptionCenter=$('#page-content-wrapper .col p');
 buttonColor=$('#colorPicker');
-valueColor=buttonColor.val();
+valueColor='#000000';    /*buttonColor.val();*/
 properties=$('#moreProperties');
 buttonBorderColor=$('#colorBorder');
 buttonOneColor=$('#colorCells');
@@ -172,14 +172,25 @@ buttonColor.change( function () {
 //     var target = event.target || event.srcElement;
 //     if (target.tagName == 'TD') {target.style.backgroundColor = valueColor;}
 // };
+// 
+// VAR 2
+// table.onclick = function (event) {
+//     event = event || window.event;
+//     var target = event.target || event.srcElement;
+//   	if ((target.getAttribute('style')==null) && (target.tagName == 'TD')) {
+//       target.style.backgroundColor = valueColor;
+//   	} else if (target.tagName == 'TD'){
+//     target.removeAttribute('style');
+//   	}
+// };
+// VAR 3
 table.onclick = function (event) {
     event = event || window.event;
     var target = event.target || event.srcElement;
-  	if ((target.getAttribute('style')==null) && (target.tagName == 'TD')) {
-      target.style.backgroundColor = valueColor;
-  	} else if (target.tagName == 'TD'){
-    target.removeAttribute('style');
-  	}
+  	if (target.tagName == 'TD') {
+      
+      target.style.backgroundColor? target.style.removeProperty('background-color') : target.style.backgroundColor=valueColor;
+    } 
 };
 
 //TODO: to set one color to all cells
