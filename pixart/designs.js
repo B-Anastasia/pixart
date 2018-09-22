@@ -71,8 +71,18 @@ var mq2=window.matchMedia("(max-width: 479.98px)");
 var mq3=window.matchMedia("(max-width: 575.98px)");
 var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
 
 if (mq1.matches) {
+	function isright(obj){
+	if (obj.value>6) {
+		obj.value=6;
+	} else if (obj.value<1) {
+		obj.value='';
+	}
+}
+} else if (mq2.matches || ios) {
 	function isright(obj){
 	if (obj.value>8) {
 		obj.value=8;
@@ -80,34 +90,26 @@ if (mq1.matches) {
 		obj.value='';
 	}
 }
-} else if (mq2.matches) {
+} else if (mq3.matches || ios) {
 	function isright(obj){
-	if (obj.value>10) {
-		obj.value=10;
+	if (obj.value>13) {
+		obj.value=13;
 	} else if (obj.value<1) {
 		obj.value='';
 	}
 }
-} else if (mq3.matches) {
+} else if (mq4.matches || ios) {
 	function isright(obj){
-	if (obj.value>15) {
-		obj.value=15;
-	} else if (obj.value<1) {
-		obj.value='';
-	}
-}
-} else if (mq4.matches) {
-	function isright(obj){
-	if (obj.value>20) {
-		obj.value=20;
+	if (obj.value>18) {
+		obj.value=18;
 	} else if (obj.value<1) {
 		obj.value='';
 	}
 }
 } else if (mq5.matches) {
 	function isright(obj){
-	if (obj.value>28) {
-		obj.value=28;
+	if (obj.value>26) {
+		obj.value=26;
 	} else if (obj.value<1) {
 		obj.value='';
 	}
@@ -115,8 +117,8 @@ if (mq1.matches) {
 }
 
 function isright(obj){
-	if (obj.value>60) {
-		obj.value=60;
+	if (obj.value>50) {
+		obj.value=50;
 	} else if (obj.value<1) {
 		obj.value='';
 	}
