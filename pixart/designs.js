@@ -71,7 +71,7 @@ var mq2=window.matchMedia("(max-width: 479.98px)");
 var mq3=window.matchMedia("(max-width: 575.98px)");
 var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
-var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
 
 
 if (mq1.matches) {
@@ -82,7 +82,7 @@ if (mq1.matches) {
 		obj.value='';
 	}
 }
-} else if (mq2.matches || ios) {
+} else if (mq2.matches) {
 	function isright(obj){
 	if (obj.value>8) {
 		obj.value=8;
@@ -90,7 +90,7 @@ if (mq1.matches) {
 		obj.value='';
 	}
 }
-} else if (mq3.matches || ios) {
+} else if (mq3.matches) {
 	function isright(obj){
 	if (obj.value>13) {
 		obj.value=13;
@@ -98,7 +98,7 @@ if (mq1.matches) {
 		obj.value='';
 	}
 }
-} else if (mq4.matches || ios) {
+} else if (mq4.matches) {
 	function isright(obj){
 	if (obj.value>18) {
 		obj.value=18;
