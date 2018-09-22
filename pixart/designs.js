@@ -71,10 +71,17 @@ var mq2=window.matchMedia("(max-width: 479.98px)");
 var mq3=window.matchMedia("(max-width: 575.98px)");
 var mq4=window.matchMedia("(max-width: 767.98px)");
 var mq5=window.matchMedia("(max-width: 1199.98px)");
-var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 
-if (iOS) {
+if (window.matchMedia("screen and (min-width: 768px)").matches) {
+    function isright(obj){
+	if (obj.value>6) {
+		obj.value=6;
+	} else if (obj.value<1) {
+		obj.value='';
+	}
+}
+if (mq1.matches) {
 	function isright(obj){
 	if (obj.value>6) {
 		obj.value=6;
