@@ -10,13 +10,14 @@ header{
 	margin-bottom: 5%;
 }
 main{
-	color: #8b8b8b;
+	color: #1b1b1b;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	max-width: 100%;
 	padding-left: 10%;
 	padding-right:  10%;
+
 }
 .button {
 	width: 381px;
@@ -37,7 +38,7 @@ main{
 	text-align: center;
 }
 ul{
-	line-height: 1.5;
+	line-height: 2;
 }
 #arrowImg {
 	position: absolute;
@@ -47,13 +48,18 @@ ul{
 	text-align: left;
 	font-size: 18px;
 }
+.description p{
+	color: #8b8b8b;
+}
 .description h1{
 	font-size: 64px;
+	font-weight: normal;
 }
 .computer img{
-	max-width: 100%;
-	height: auto;
 	min-width: 400px;
+	width: 100%;
+    height: auto;
+    display: block;
 }
 #deviceMobile{
 	display: none;
