@@ -1,0 +1,124 @@
+body, html{
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: Raleway;
+}
+header{
+	background-color: #333a43;
+	padding: 10px 0 10px 10%;
+	margin-bottom: 5%;
+}
+main{
+	color: #8b8b8b;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 100%;
+	padding-left: 10%;
+	padding-right:  10%;
+}
+.button {
+	width: 381px;
+	background: #3366cc;
+	text-decoration: none;
+	text-align: center;
+	border-radius: ;
+	color: white;
+	font-size: 22px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 8px;
+}
+.button a{
+	color: white;
+	text-decoration: none;
+	font-size: ;
+	text-align: center;
+}
+ul{
+	line-height: 1.5;
+}
+#arrowImg {
+	position: absolute;
+	padding-left: 135px;
+}
+.description{
+	text-align: left;
+	font-size: 18px;
+}
+.description h1{
+	font-size: 64px;
+}
+.computer img{
+	max-width: 100%;
+	height: auto;
+	min-width: 400px;
+}
+#deviceMobile{
+	display: none;
+}
+.button2{
+	display: none;
+}
+footer{
+	display: none;
+}
+
+@media (min-width: 0px) and (max-width: 749.98px)  {
+main{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.description h1{
+	text-align: center;
+	font-size: 50px;
+}
+#arrowImg{
+	display: none;
+}
+#deviceMobile{
+	display: block; 
+	min-width: 100px;
+	max-width: 100%;
+}
+#deviceDesktop{
+	display: none;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+	font-size: 38px;
+	text-align: center;
+}
+footer p{
+	font-size: 14px;
+	margin: 0;
+}
+footer{
+	position: fixed;
+	bottom: 5%;
+	display: block;
+	height: 100px;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	background: #3366cc;
+	color: white;
+}
+.button, .description p{
+	display: none;
+}
+}
+
+@media (min-width: 749.98px) and (max-width: 899.98px){
+main{
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.holeButton{
+	text-align: -webkit-center;
+}
+}
