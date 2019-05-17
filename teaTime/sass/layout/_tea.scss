@@ -1,0 +1,24 @@
+.tea{
+    background-color: $color-white-grey;
+    
+    padding: $padding-middle;
+    
+    @include respond(tab-port){
+        padding: $padding-small;
+
+    }
+
+    &__main{
+        margin-bottom: $magrin-bottom-xs;
+    }
+    &__types{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include respond(tab-land){
+            justify-content: space-around;
+        }
+    }
+
+}

@@ -1,0 +1,33 @@
+.process{
+    margin-bottom: $magrin-bottom-big;
+
+    
+    
+    @include respond(tab-port){
+        margin-bottom: 0;
+        padding: $padding-small;
+
+    }
+
+    &__main{
+        // @include posCenter;
+        margin: $margin-main;
+
+        @include respond(tab-port){
+            margin: 0;
+            margin-bottom: $magrin-bottom-xs;
+    
+        }
+    }
+
+    &__work{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+       
+        @include respond(tab-port){
+            justify-content: space-around;
+            flex-wrap: wrap;   
+           }
+    }
+}

@@ -1,0 +1,61 @@
+.form {
+
+    font-size: $default;
+    font-family: $default-font;
+    line-height: 2;
+    @include respond (phone-xs) {
+        line-height: 5;
+    }
+
+
+    &__name {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        @include respond (tab-land) {
+            margin-bottom: 0;
+        }
+        // @include respond (phone-xs) {
+        //     margin-bottom: 4rem;
+        // }
+        
+    }
+
+    &__line {
+        width: 100%;
+        display: block;
+        border: none;
+        border-bottom: 1px solid $color-grey-light-1;
+        padding: 1rem 1rem;
+        // font-size: 1.5rem;
+
+        &--textarea {
+            resize: none;
+            overflow: auto;
+            outline: none;
+            font-family: $default-font;
+            border-bottom: 1px solid $color-grey-light-1;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__close {
+        display: none;
+
+        @include respond (tab-port) {
+            display: block;
+            right: 0;
+            top: 0;
+            position: absolute;
+
+            &-btn {
+                fill: $color-primary-orange;
+
+            }
+        }
+    }
+
+
+
+}

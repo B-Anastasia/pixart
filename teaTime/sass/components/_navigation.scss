@@ -1,0 +1,151 @@
+.navigation {
+    &__checkbox{
+        display: none;
+    }
+    &__button{
+        background-color: $color-white;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6rem;
+        right: 9rem;
+        z-index: 20;
+        box-shadow: $border-shadow;
+        cursor: pointer;
+
+        @include respond(phone){
+            top: 2rem;
+            right: 2rem;
+        }
+
+        @include respond(tab-land) {
+            right:  5rem;
+   
+        }
+    }
+    //ICON HAMBURGER
+    &__icon{
+        position: relative;
+        &,
+        &::before,
+        &::after{
+            position: absolute;
+            top: 50%; margin-top: -.1rem;
+            left: 50%; margin-left: -1.5rem;
+            width: 3rem;
+            height: .2rem;
+            background-color: $color-primary-dark;
+        }
+        &::before,
+        &::after{
+            content: "";
+            display: block;
+            transition: all .2s;
+        }
+        &::before{transform: translateY(-.8rem)}
+        &::after{transform: translateY(.8rem)}
+
+    }
+    &__button:hover &__icon::before{
+        transform: translateY(-1rem);
+    }
+    &__button:hover &__icon::after{
+        transform: translateY(1rem);
+    }
+    &__checkbox:checked + &__button &__icon{
+        background-color: transparent;
+    }
+    &__checkbox:checked + &__button &__icon::before{
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked + &__button &__icon::after{
+        transform: rotate(-135deg);
+    }
+
+    // BACKGROUND CIRCLE
+    &__background{  //use radial gradient
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 9.5rem;
+        background-image: radial-gradient($color-orange-light, $color-white);
+        z-index: 10;
+
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        //open navigatio then scale our background
+        // transform: scale(80);
+        @include respond(phone){
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+
+        @include respond(tab-land) {
+            right:  5.5rem;
+   
+        }
+    }
+    &__nav{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 15;
+
+        opacity: 0;
+        width: 0; //for links
+
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    &__list{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    &__item{
+        margin: 1rem;
+    }
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1rem 2rem; 
+            //animation
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50% ) ;
+            background-size: 224%;
+            transition: all .4s;
+            span{
+                margin-right: 1rem;
+                display: inline-block; 
+            }
+        }
+        &:hover,
+        &:active{
+            background-position: 100%;
+            color: $color-primary-orange;
+            transform: translateX(1rem);
+        }
+    }
+    //FUNCTIONALITY
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%; //for links
+    }
+
+    
+}

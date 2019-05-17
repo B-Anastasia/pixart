@@ -1,0 +1,41 @@
+.slideshow__button {
+    padding: 0;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $color-white;
+    box-shadow: $border-shadow-light;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &>svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        @include posCenter;
+    }
+
+    &:hover {
+        background-color: $color-primary-orange;
+        fill: $color-white;
+        box-shadow: $border-shadow-light;
+    }
+
+    &--left {
+        position: absolute;
+        top: 50%;
+        z-index: 9;
+
+
+    }
+
+    &--right {
+        position: absolute;
+        top: 50%;
+        z-index: 9;
+        right: 0;
+
+    }
+}
+
+.slideshow__change {}

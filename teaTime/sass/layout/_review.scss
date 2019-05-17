@@ -1,0 +1,27 @@
+.review {
+    background-color: $color-white-grey;
+    padding: 2rem 0 14rem 0;
+
+    @include respond(tab-port) {
+        padding: $padding-small;
+    }
+
+    &__main {
+        margin: $margin-main;
+
+        @include respond(tab-port) {
+            padding: 0;
+            margin: 0;
+            margin-bottom: $magrin-bottom;
+        }
+    }
+
+    &__slideshow {
+
+        display: none;
+        position: relative;
+        @include clearfix;
+
+    }
+
+}

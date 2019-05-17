@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tea Time: The Best Time to Drink Tea</title>
+</head>
+
+<body>
+    <!-- <script src="js/infinity.js"></script> -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list hide">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Tea Time</a></li>
+                <li class="navigation__item"><a href="#working_process" class="navigation__link"><span>02</span>Working
+                        Process</a></li>
+                <li class="navigation__item"><a href="#types" class="navigation__link"><span>03</span>Types of tea</a>
+                </li>
+                <li class="navigation__item"><a href="#rules" class="navigation__link"><span>04</span>Rules</a></li>
+                <li class="navigation__item"><a href="#clients_said" class="navigation__link"><span>05</span>Clients
+                        Said</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header__logo-box">
+            <!-- <picture class="logo">
+                <source media="(max-width: 37.5em)" srcset="img/logo-phone-1x.png 1x, img/logo-phone-2x.png 2x" >
+                    <img srcset="img/logo-1x.png 1x, img/logo.png 2x" alt="logo " src="img/logo.png">
+            </picture> -->
+            <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="logo " src="img/logo-2x.png" class="logo">
+        </div>
+        <div class="header__text center">
+            <h1 class="heading-primary">
+                <span class="orange">Tea Time: </span>
+                <span class="heading-primary--sub">Best tea and </br>best time to drink tea</span>
+            </h1>
+            <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione veniam impedit
+                totam, beatae maxime nemo, animi, nisi officiis porro sit unde similique eos dicta perferendis quibusdam
+                quisquam iste natus!
+            </p>
+        </div>
+        <div class="header__message ">
+
+            <div class="header__message-icon btn">
+                <svg class="message-icon">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="header__message-form" id="form">
+            <form action="action.php" name="message" class="form">
+                <h3 class="form__name center">
+                    <span class="orange">Send </span>
+                    <span>A Message</span>
+                </h3>
+                <input type="text" name="name" class="form__line" placeholder="Your Name">
+                <input type="email" class="form__line" placeholder="Your Email">
+                <textarea name="message_text" class="form__line form__line--textarea" rows="3"
+                    placeholder="Your Message"></textarea>
+                <input type="submit" class="btn btn--orange form__btn" value="Send Message &rarr;">
+                <div class="form__close">
+                    <svg class="slideshow__button form__close-btn btn ">
+                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+            </form>
+
+        </div>
+    </header>
+    <main>
+        <!-- <div class="container"> -->
+        <section class="process" id="working_process">
+            <div class="container">
+                <div class="process__main">
+                    <div class="heading center">
+                        <h2 class="heading-secondary">
+                            <span class="orange">Working </span>
+                            <span class="heading-secondary--sub">Process</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="process__work">
+                    <div class="process__card">
+                        <div class="process__card--picture process__card--picture-1">
+                            <div class="process__card--svg">
+                                <svg class="process__card--icon">
+                                    <use xlink:href="img/sprite.svg#icon-globe"></use>
+                                </svg>
+                            </div>
+                            <h4 class="process__card--heading heading-tertiary">Tea Growing and Production</h4>
+                            <div class="process__card--text center">Lorem ipsum dolor sit amet...</div>
+                            <a href="#" class="process__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__card--picture process__card--picture-2">
+                            <div class="process__card--svg">
+                                <svg class="process__card--icon">
+                                    <use xlink:href="img/sprite.svg#icon-back-in-time"></use>
+                                </svg>
+                            </div>
+                            <h4 class="process__card--heading heading-tertiary">Tea Growing and Production</h4>
+                            <div class="process__card--text center">Lorem ipsum dolor sit amet...</div>
+                            <a href="#" class="process__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__card--picture process__card--picture-3">
+                            <div class="process__card--svg">
+                                <svg class="process__card--icon">
+                                    <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+                                </svg>
+                            </div>
+                            <h4 class="process__card--heading heading-tertiary">Tea Growing and Production</h4>
+                            <div class="process__card--text center">Lorem ipsum dolor sit amet...</div>
+                            <a href="#" class="process__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__card--picture process__card--picture-4">
+                            <div class="process__card--svg">
+                                <svg class="process__card--icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-landing"></use>
+                                </svg>
+                            </div>
+                            <h4 class="process__card--heading heading-tertiary">Tea Growing and Production</h4>
+                            <div class="process__card--text center">Lorem ipsum dolor sit amet...</div>
+                            <a href="#" class="process__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tea" id="types">
+            <div class="container">
+                <div class="tea__main">
+                    <div class="heading center">
+                        <h2 class="heading-secondary">
+                            <span class="orange">Types</span>
+                            <span class="heading-secondary--sub">of Tea</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="tea__types">
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-1">
+                            <div class="tea__card--name heading-tertiary">Green Tea</div>
+                            <!-- <div class="tea__card--price">15 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                            <!-- <button class="tea__card--button btn btn--white">&plus; Know More</button> -->
+
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-2">
+                            <div class="tea__card--name heading-tertiary">Black Tea</div>
+                            <!-- <div class="tea__card--price">10 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-3">
+                            <div class="tea__card--name heading-tertiary">White Tea</div>
+                            <!-- <div class="tea__card--price">17 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-4">
+                            <div class="tea__card--name heading-tertiary">Oolong Tea</div>
+                            <!-- <div class="tea__card--price">14 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-5">
+                            <div class="tea__card--name heading-tertiary">Matcha Tea</div>
+                            <!-- <div class="tea__card--price">15 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-6">
+                            <div class="tea__card--name heading-tertiary">Herbal Tea</div>
+                            <!-- <div class="tea__card--price">15 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-7">
+                            <div class="tea__card--name heading-tertiary">Rooibos Tea</div>
+                            <!-- <div class="tea__card--price">20 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-8">
+                            <div class="tea__card--name heading-tertiary">Hibiscus Tea</div>
+                            <!-- <div class="tea__card--price">15 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                    <div class="tea__card">
+                        <div class="tea__card--picture tea__card--picture-9">
+                            <div class="tea__card--name heading-tertiary">Green Rooibos Tea</div>
+                            <!-- <div class="tea__card--price">15 &dollar;</div> -->
+                            <a href="#" class="tea__card--button btn btn--white">&plus; Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="cup" id="rules">
+                <div class="container">
+                    <div class="cup__main">
+                        <div class="heading center">
+                            <h2 class="heading-secondary">
+                                <span class="orange">Rules</span>
+                                <span class="heading-secondary--sub">for Making The Perfect Cup Of Tea</span>
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="cup__create">
+                        <div class="cup__create--picture">
+                            <img srcset="img/cup-small.png 300w, img/cup-big.png 1000w"
+                                sizes="(max-width: 24.375em) 36vw, (max-width: 37.5em) 37vw, 30em" src="img/cup3.png"
+                                alt="Cup of tea">
+                        </div>
+                        <div class="cup__create--list">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium maiores
+                                    voluptas! Dolores quibusdam, dolorem ratione facilis ullam eligendi fugit facere,
+                                    excepturi possimus, eum perferendis molestiae culpa placeat. </li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium maiores
+                                    voluptas! </li>
+                                <li>Sit amet consectetur adipisicing elit. Quasi ullam sint voluptatum soluta? </li>
+                                <li>Saepe repudiandae velit ullam sapiente veniam modi illo animi aspernatur! Dolor
+                                    recusandae accusantium quasi modi soluta ab velit assumenda libero consectetur
+                                    omnis. </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="review" id="clients_said">
+
+                <div class="container">
+                    <div class="review__main">
+                        <div class="heading center">
+                            <h2 class="heading-secondary">
+                                <span class="orange">Clients</span>
+                                <span class="heading-secondary--sub">Said</span>
+                            </h2>
+                            <p>Tempore culpa voluptatem fugit optio voluptas maxime earum sequi!</p>
+                        </div>
+                    </div>
+
+                    <div id="slider" class="slider">
+
+                        <div class="slider__wrapper">
+                            <div class="slider__item slider__item_active">
+                                <div class="slideshow center" id="slide_1">
+                                    <div class="slideshow__img">
+                                        <img srcset="img/people/1-small.jpg 300w, img/people/1-big.jpg 1000w"
+                                            sizes="(max-width: 600px) 12vw, (max-width: 900px) 8vw, 90px"
+                                            src="./img/people/1-big.jpg" alt="photo">
+                                    </div>
+                                    <div class="slideshow__main">
+                                        <div class="slideshow__main--text">
+                                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+                                                aliquid
+                                                voluptates quibusdam vero officiis neque nemo repellendus, eos
+                                                voluptas.&rdquo;
+                                            </p>
+                                        </div>
+                                        <div class="slideshow__main--stars">
+                                            <svg class="stars">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="stars">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="stars">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="stars">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="stars">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="slideshow__main--name">
+                                            <span class="bold">Kita Say,</span>
+                                            <span class="italic">Director</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__item slider__item_active">
+                                    <div class="slideshow center" id="slide_2">
+                                        <div class="slideshow__img">
+                                            <img srcset="img/people/2-small.jpg 300w, img/people/2-big.jpg 1000w"
+                                                sizes="(max-width: 37.5em) 12vw, (max-width: 56.25em) 8vw, 90px"
+                                                src="./img/people/2-big.jpg" alt="photo">
+                                        </div>
+                                        <div class="slideshow__main">
+                                            <div class="slideshow__main--text">
+                                                <p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint rerum porro libero.&rdquo;
+                                                </p>
+                                            </div>
+                                            <div class="slideshow__main--stars">
+                                                <svg class="stars">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="stars">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="stars">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="stars">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="stars">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+    
+                                            <div class="slideshow__main--name">
+                                                <span class="bold">Mike Min,</span>
+                                                <span class="italic">Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__item slider__item_active">
+                                        <div class="slideshow center" id="slide_3">
+                                            <div class="slideshow__img">
+                                                <img srcset="img/people/3-small.jpg 300w, img/people/3-big.jpg 1000w"
+                                                    sizes="(max-width: 37.5em) 12vw, (max-width: 56.25em) 8vw, 90px"
+                                                    src="./img/people/3-big.jpg" alt="photo">
+                                            </div>
+                                            <div class="slideshow__main">
+                                                <div class="slideshow__main--text">
+                                                    <p>&ldquo;Eius totam dolorum animi nobis magnam sit cum ipsam, ex debitis fugiat veniam ad ducimus labore molestiae aspernatur, quisquam eaque libero.&rdquo;
+                                                    </p>
+                                                </div>
+                                                <div class="slideshow__main--stars">
+                                                    <svg class="stars">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="stars">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="stars">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="stars">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="stars">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+        
+                                                <div class="slideshow__main--name">
+                                                    <span class="bold">Tom Hank,</span>
+                                                    <span class="italic">Web developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider__item slider__item_active">
+                                            <div class="slideshow center" id="slide_4">
+                                                <div class="slideshow__img">
+                                                    <img srcset="img/people/4-small.jpg 300w, img/people/4-big.jpg 1000w"
+                                                        sizes="(max-width: 37.5em) 12vw, (max-width: 56.25em) 8vw, 90px"
+                                                        src="./img/people/4-big.jpg" alt="photo">
+                                                </div>
+                                                <div class="slideshow__main">
+                                                    <div class="slideshow__main--text">
+                                                        <p>&ldquo;Ut odit explicabo, harum minima accusamus sint blanditiis fugit deleniti cum dolor dolorum velit rem possimus, doloribus iusto atque. A nostrum suscipit labore aspernatur aliquam earum quos non, assumenda ea.
+                                                    </div>
+                                                    <div class="slideshow__main--stars">
+                                                        <svg class="stars">
+                                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                        </svg>
+                                                        <svg class="stars">
+                                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                        </svg>
+                                                        <svg class="stars">
+                                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                        </svg>
+                                                        <svg class="stars">
+                                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                        </svg>
+                                                        <svg class="stars">
+                                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                        </svg>
+                                                    </div>
+            
+                                                    <div class="slideshow__main--name">
+                                                        <span class="bold">Rick Vong,</span>
+                                                        <span class="italic">Seller</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+
+                            
+                        </div>
+                        <button
+                            class="slideshow__button btn slideshow__button--left slider__control slider__control_left">
+                            <svg class="slideshow__button--left-1">
+                                <use xlink:href="img/sprite.svg#icon-chevron-left"></use>
+                            </svg>
+                        </button>
+                        <button
+                            class="slideshow__button btn slideshow__button--right slider__control slider__control_right slider__control_show">
+                            <svg class="slideshow__button--right-2">
+                                <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="social center">
+                <div class="container">
+                    <div class="social__group social__linkedin">
+                        <a href="#" class="social__linkedin--img">
+                            <img src="./img/social/link.png" alt="Linkdin">
+                        </a>
+                    </div>
+                    <div class="social__group social__dribble">
+                        <a href="#" class="social__dribble--img">
+                            <img src="./img/social/dr.png" alt="Dribble">
+                        </a>
+                    </div>
+                    <div class="social__group social__envato">
+                        <a href="#" class="social__envato--img">
+                            <img src="./img/social/envanto.png" alt="Envato">
+                        </a>
+                    </div>
+                    <div class="social__group social__linkedin">
+                        <a href="#" class="social__linkedin--img">
+                            <img src="./img/social/link.png" alt="Linkdin">
+                        </a>
+                    </div>
+                    <div class="social__group social__dribble">
+                        <a href="#" class="social__dribble--img">
+                            <img src="./img/social/dr.png" alt="Dribble">
+                        </a>
+                    </div>
+                    <div class="social__group social__envato">
+                        <a href="#" class="social__envato--img">
+                            <img src="./img/social/envanto.png" alt="Envato">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer__button btn btn--white" value="">Contact Us</div>
+                <div class="footer__social center">
+                    <div class="footer__social--row">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://192.168.1.23:8080" target="_blank"
+                            rel="noopener" class=" btn footer__social--button">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="http://www.twitter.com/share?url=http://www.google.com/"
+                            class="btn footer__social--button">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dribbble.com/careers" class="btn footer__social--button">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#icon-dribbble"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.behance.net/featured" class="btn footer__social--button">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#icon-behance"></use>
+                            </svg>
+                        </a>
+                        <div class="footer__social--copy">&copy; 2019 Boshniak A.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- </div> -->
+    </main>
+
+    <script src="js/infinity.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+.footer {
+    background-color: $color-grey-footer;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+
+    &__button {
+        line-height: .4;
+        font-size: 1.5rem;
+        width: 15%;
+        margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+            width: 30%;
+        }
+        @include respond(tab-land) {
+            width: 20%;
+        }
+
+    
+        @include respond(phone) {
+            width: 50%;
+        }
+
+
+}
+
+
+&__social {
+    margin-top: 3rem;
+    position: relative;
+
+    &--copy {
+        color: $color-grey-light;
+        margin-top: 1rem;
+    }
+
+}
+
+}
+
+.footer .footer__social--row .footer__social--button {
+    // box-shadow: $border-shadow-light;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $color-grey-light-1;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+
+    &:not(:first-child) {
+        margin-left: 1%;
+    }
+
+    &:hover {
+        background-color: $color-primary-orange;
+        fill: $color-white;
+        box-shadow: $border-shadow;
+    }
+
+    .icon {
+
+        @include posCenter;
+        z-index: 9;
+        width: 2rem;
+        height: 2rem;
+
+        fill: $color-white;
+    }
+}

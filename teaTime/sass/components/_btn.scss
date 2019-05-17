@@ -1,0 +1,45 @@
+.btn {
+  transition: all 0.2s;
+
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    border-radius: 10rem;
+    display: block;
+    border: none;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+  }
+
+  &:hover {
+    box-shadow: $border-shadow-dark;
+    transform: translateY(-3px);
+  }
+
+  &:focus {
+    outline-style: none;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    border: none;
+  }
+
+  &--orange {
+    background-color: $color-primary-orange;
+    color: $color-white;
+
+    &:hover {
+      box-shadow: $border-shadow;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-light;
+    box-shadow: $border-shadow;
+  }
+}

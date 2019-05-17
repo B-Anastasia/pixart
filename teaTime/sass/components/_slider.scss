@@ -1,0 +1,29 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  background-color: $color-white;
+        box-shadow: $border-shadow-light;
+        padding: 0 3rem;
+        
+            &:hover{
+                border:  1px solid $color-primary-orange;
+            }
+
+  @include respond(tab-port){
+    flex: 0 0 100%;
+  max-width: 100%;
+
+  }
+}
+

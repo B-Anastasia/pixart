@@ -1,0 +1,53 @@
+.cup{
+    padding: $padding-small;
+    &__main{
+        @include respond(tab-port) {
+            margin-bottom: $magrin-bottom-xs;
+            margin-top: 0;
+        }
+        @include respond(phone) {
+            margin-bottom: 0;
+            
+        }
+    }
+    &__create{
+        @include clearfix;
+        margin-top: 8rem;
+        position: relative;
+        @include respond(tab-port) {
+            margin-top: 0;
+        }
+        &--list{
+            width: 70%;
+            font-size: 1.6rem;
+            float: left;
+            padding: 4rem;
+            ul{
+                // list-style: none;
+            }
+            @include respond(phone) {
+                
+                padding: 0 2rem;
+                width: 100%;
+                float: none;
+                
+            }
+        }
+        &--picture{
+            width: 40%;
+            z-index: -1;
+            // float: left;
+            position: absolute;
+            right: 0;
+                img{
+                    width: 100%;
+                }
+
+                @include respond(phone){
+                    position: relative;
+                    margin: 0 auto;
+                }
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+.social {
+    background-color: $color-white-footer;
+
+    &__group {
+        // margin-top: 7rem;
+        margin-bottom: 7rem;
+        @include respond(tab-land) {
+            margin-bottom: $magrin-bottom;
+            margin-top: $magrin-bottom;
+            
+        }
+
+        &:not(:last-child) {
+            margin-top: 7rem;
+            margin-right: 5%;
+
+            @include respond(tab-land) {
+                margin-bottom: $magrin-bottom;
+                margin-top: $magrin-bottom;
+                
+            }
+        }
+
+        display: inline-block;
+
+        & a>img {
+            height: 3rem;
+           
+
+            @include respond(tab-port) {
+                height: 2.5rem;
+            }
+        }
+    }
+
+    &__linkedin {}
+
+    &__dribble {}
+
+    &__envato {}
+}
