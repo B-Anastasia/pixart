@@ -64,35 +64,35 @@
         background-position: top;
 
         &-1 {
-            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/globe-small.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/globe-small.jpg);
 
             @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
-                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/globe-big.jpg);
+                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/globe-big.jpg);
             }
         }
 
         &-2 {
-            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/time-small.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/time-small.jpg);
 
             @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
-                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/time-big.jpg);
+                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/time-big.jpg);
             }
 
         }
 
         &-3 {
-            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/order-small.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/order-small.jpg);
 
             @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
-                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/order-big.jpg);
+                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/order-big.jpg);
             }
         }
 
         &-4 {
-            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/plane-small.jpg);
+            background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/plane-small.jpg);
 
             @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
-                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(../../img/work/plane-big.jpg);
+                background-image: linear-gradient(to right bottom, rgba($color-white, 0.4), rgba($color-orange-light, 0.5)), url(./../img/work/plane-big.jpg);
             }
 
         }

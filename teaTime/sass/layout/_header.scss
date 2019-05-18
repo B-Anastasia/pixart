@@ -10,7 +10,7 @@
         linear-gradient(to right bottom,
         rgba($color-white, 0.6),
         rgba($color-orange-light, 0.5)),
-        url(../../img/tea-1x.jpg);
+        url("./ ../img/tea-1x.jpg");
     background-size: cover;
     background-position: top;
 
@@ -18,7 +18,7 @@
         background-image:  linear-gradient(to right bottom,
         rgba($color-white, 0.6),
         rgba($color-orange-light, 0.5)),
-         url(../../img/tea-2x.jpg);
+         url("./../img/tea-2x.jpg");
     }
 
     &__logo-box {

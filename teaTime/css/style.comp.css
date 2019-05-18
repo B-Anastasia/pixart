@@ -88,7 +88,7 @@ body {
 .header {
   height: 95vh;
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 110, 71, 0.5)), url(../../img/tea-1x.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 110, 71, 0.5)), url("./../img/tea-1x.jpg");
   background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 37.5em) {
@@ -96,7 +96,7 @@ body {
       height: 100vh; } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 110, 71, 0.5)), url(../../img/tea-2x.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 110, 71, 0.5)), url("./../img/tea-2x.jpg"); } }
   .header__logo-box {
     position: absolute;
     top: 6rem;
@@ -658,25 +658,25 @@ body {
     background-size: cover;
     background-position: top; }
     .process__card--picture-1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/globe-small.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/globe-small.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .process__card--picture-1 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/globe-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/globe-big.jpg); } }
     .process__card--picture-2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/time-small.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/time-small.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .process__card--picture-2 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/time-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/time-big.jpg); } }
     .process__card--picture-3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/order-small.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/order-small.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .process__card--picture-3 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/order-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/order-big.jpg); } }
     .process__card--picture-4 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/plane-small.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/plane-small.jpg); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .process__card--picture-4 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(../../img/work/plane-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 110, 71, 0.5)), url(./../img/work/plane-big.jpg); } }
 
 .tea__card {
   margin-bottom: 4.5rem;
@@ -703,50 +703,50 @@ body {
     background-position: center;
     border-radius: 2px; }
     .tea__card--picture-1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/green-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/green-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-1 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/green-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/green-big.jpg); } }
     .tea__card--picture-2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/black-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/black-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-2 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/black-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/black-big.jpg); } }
     .tea__card--picture-3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/white-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/white-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-3 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/white-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/white-big.jpg); } }
     .tea__card--picture-4 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/oolong-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/oolong-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-4 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/oolong-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/oolong-big.jpg); } }
     .tea__card--picture-5 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/matcha-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/matcha-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-5 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/matcha-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/matcha-big.jpg); } }
     .tea__card--picture-6 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/herbal-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/herbal-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-6 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/herbal-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/herbal-big.jpg); } }
     .tea__card--picture-7 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/rooibos-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/rooibos-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-7 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/rooibos-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/rooibos-big.jpg); } }
     .tea__card--picture-8 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/hibiscus-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/hibiscus-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-8 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/hibiscus-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/hibiscus-big.jpg); } }
     .tea__card--picture-9 {
-      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("../../img/types/greenRooibos-small.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url("./../img/types/greenRooibos-small.jpg"); }
       @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 2000px) {
         .tea__card--picture-9 {
-          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(../../img/types/greenRooibos-big.jpg); } }
+          background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 110, 71, 0.2)), url(./../img/types/greenRooibos-big.jpg); } }
 
 .slideshow {
   position: relative; }
